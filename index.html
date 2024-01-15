@@ -132,7 +132,7 @@
 
         .nav-tags {
             box-sizing: border-box;
-            position: absolute;
+            position: fixed;
             bottom: 1rem;
             width: 100%;
             display: flex;
@@ -160,35 +160,75 @@
         .slider-text h1::first-letter {
             color: red;
         }
+    </style>
+    <style>
+        .flexdiv h1 {
+            text-shadow: 12px 5px black;
+        }
 
-
-
-        @media screen and (max-width:500px) {
-            h1 {
-                font-size: 2em;
+        @media screen and (max-width:850px) {
+            .flexdiv h1 {
+                font-size: 5em;
+                text-shadow: 3px 1px black;
             }
 
             .flexdiv div {
                 font-size: 0.8em;
+                font-size: 2vw;
+            }
+            .nav-tags a {
+                font-size: 1.4vw;
+            }
+
+
+        }
+
+        @media screen and (max-height:670px) {
+            .flexdiv h1 {
+                font-size: 5em;
+                text-shadow: 3px 1px black;
+            }
+
+            .flexdiv div {
+                font-size: 0.8em;
+                font-size: 1.8vh;
+            }
+
+            .nav-tags a {
+                font-size: 1.4vh;
+            }
+
+
+        }
+
+        @media screen and (max-width:500px) {
+            .flexdiv h1 {
+                font-size: 2em;
+                text-shadow: 3px 1px black;
+            }
+
+            .flexdiv div {
+                font-size: 0.8em;
+                font-size: 3.3vw;
             }
 
             .nav-tags {
                 box-sizing: border-box;
-                position: absolute;
                 bottom: 1rem;
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
-                gap: 0.6em;
-                padding: 1em 3em;
+                gap: 0.5em;
+                row-gap: 0.3em;
+                padding: 1em 1em;
                 justify-content: center;
             }
 
             .nav-tags a {
                 all: unset;
                 font-family: poppins;
-                color: white;
-                font-size: 0.4em;
+                color: #777;
+                font-size: 0.45em;
                 cursor: pointer;
             }
 
@@ -204,6 +244,7 @@
             #pnine .slider-image {
                 object-position: -530px;
             }
+
         }
     </style>
 </head>
@@ -224,6 +265,7 @@
         <div class="slider-box main-page">
             <!-- <img src="https://wallpapercave.com/wp/wp8196606.jpg" alt="" class="slider-image"> -->
             <img src="image-one.jpg" alt="dubai image" class="slider-image">
+
             <div class="slider-text">
                 <div class="flexdiv">
                     <h1>
@@ -285,7 +327,7 @@
                         Dubai Fountain
                     </h1>
                     <div>
-                        Dubai Fountain: Iconic water display at Burj Khalifa base, daily synchronized performances with
+                        Iconic water display at Burj Khalifa base, daily synchronized performances with
                         lights and music, a dazzling tourist attraction.
                     </div>
                 </div>
@@ -300,7 +342,7 @@
                         Dubai Mall
                     </h1>
                     <div>
-                        Dubai Mall: Vast shopping, entertainment hub adjacent to Burj Khalifa. Features luxury brands,
+                        Vast shopping, entertainment hub adjacent to Burj Khalifa. Features luxury brands,
                         diverse dining, and attractions. Global destination.
                     </div>
                 </div>
@@ -315,7 +357,7 @@
                         Ski Dubai
                     </h1>
                     <div>
-                        Ski Dubai: Indoor ski resort, part of Mall of the Emirates. Real snow, slopes, and penguins
+                        Indoor ski resort, part of Mall of the Emirates. Real snow, slopes, and penguins
                         offer a unique winter adventure.
                     </div>
                 </div>
@@ -328,10 +370,10 @@
             <div class="slider-text">
                 <div class="flexdiv">
                     <h1>
-                        Dubai Miracle Garden
+                        Miracle Garden
                     </h1>
                     <div>
-                        Dubai Miracle Garden: World's largest natural flower garden, featuring intricate designs and
+                        World's largest natural flower garden, featuring intricate designs and
                         vibrant blooms. Seasonal attraction showcasing horticultural artistry.
                     </div>
                 </div>
@@ -347,7 +389,7 @@
                         Palm Jumeriah
                     </h1>
                     <div>
-                        Palm Jumeirah: Man-made palm-shaped island in Dubai, UAE, featuring luxury residences, hotels,
+                        Man-made palm-shaped island in Dubai, UAE, featuring luxury residences, hotels,
                         and entertainment. Iconic symbol of architectural innovation.
                     </div>
                 </div>
@@ -360,10 +402,10 @@
             <div class="slider-text">
                 <div class="flexdiv">
                     <h1>
-                        Dubai Desert
+                        The Arabian Desert
                     </h1>
                     <div>
-                        Dubai Desert: Expansive, awe-inspiring desert landscape surrounding the city. Offers dune
+                        Expansive, awe-inspiring desert landscape surrounding the city. Offers dune
                         bashing, camel rides, and serene sunsets. Unique natural beauty.
                     </div>
                 </div>
@@ -379,7 +421,7 @@
                         Skydive Dubai
                     </h1>
                     <div>
-                        Skydive Dubai: Premier skydiving destination, providing breathtaking aerial views of Dubai's
+                        Premier skydiving destination, providing breathtaking aerial views of Dubai's
                         landmarks. Thrilling experiences for both beginners and experienced skydivers.
                     </div>
                 </div>
@@ -411,7 +453,7 @@
                         Dubai Kite Beach
                     </h1>
                     <div>
-                        Kite Beach Dubai: Popular stretch along Jumeirah, renowned for kite surfing and water sports.
+                        Popular stretch along Jumeirah, renowned for kite surfing and water sports.
                         Vibrant atmosphere, cafes, and stunning views.
                     </div>
                 </div>
@@ -424,7 +466,7 @@
             <div class="slider-text">
                 <div class="flexdiv">
                     <h1>
-                        Dubai Water Canal
+                        Dubai Canal
                     </h1>
                     <div>
                         Artificial canal connecting the Arabian Gulf to the Dubai Creek. Features pedestrian pathways,
@@ -536,7 +578,7 @@
             Palm Jumeriah
         </a>
         <a href="#pnine">
-            Dubai Desert
+            Arabian Desert
         </a>
         <a href="#pten">
             Skydive Dubai
@@ -548,7 +590,7 @@
             Dubai Kite Beach
         </a>
         <a href="#pthirteen">
-            Dubai Water Canal
+            Dubai Canal
         </a>
         <a href="#pfourteen">
             Dubai Opera
